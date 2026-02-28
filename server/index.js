@@ -15,7 +15,7 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin:'http://localhost:5173',
+  origin:'https://live-vibe-theta.vercel.app',
   credentials: true,
 };
 
