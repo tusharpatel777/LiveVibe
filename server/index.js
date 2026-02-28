@@ -15,7 +15,7 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin:'http://localhost:5173',
   credentials: true,
 };
 

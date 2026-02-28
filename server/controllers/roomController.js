@@ -10,7 +10,7 @@ export const createRoom = async (req, res) => {
       return res.status(400).json({ error: 'Video URL and username are required' });
     }
 
-    const domain = process.env.CLIENT_DOMAIN || 'localhost';
+    const domain ='localhost';
     const classification = classifyVideoUrl(videoUrl, domain);
     if (!classification.isValid) {
       return res.status(400).json({ error: classification.error });
